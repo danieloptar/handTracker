@@ -51,7 +51,7 @@ class FingerCounter:
                 img[0:h, 0:w] = self.fingerCountList[totalFingers - 1]
                 cv2.rectangle(img, (20, 225), (170, 425), (255, 255, 255), cv2.FILLED)
                 cv2.putText(img, str(totalFingers), (45, 375), cv2.FONT_HERSHEY_PLAIN,
-                            5, (255, 0, 0), 25)
+                            10, (255, 0, 0), 25)
             cTime = time.time()
             fps = 1 / (cTime - self.pTime)
             self.pTime = cTime
